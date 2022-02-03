@@ -1,0 +1,14 @@
+trigger:
+  - devops
+  - release/*
+  - master
+
+resources:
+  repositories:
+    - repository: templates
+      name: WORKFLOW/workflow-pipelines
+      type: git
+      ref: master
+
+stages:
+  - template: templates/az-semver/ci-cd-template.yml@templates

@@ -1,0 +1,11 @@
+trigger: none
+
+resources:
+  repositories:
+    - repository: templates
+      name: WORKFLOW/workflow-pipelines
+      type: git
+      ref: master
+
+stages:
+  - template: templates/az-semver/pr-validation-template.yml@templates
