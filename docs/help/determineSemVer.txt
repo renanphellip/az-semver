@@ -1,0 +1,18 @@
+Description: Retrieve a new semantic version of pull request description to return updated version.
+Command: determineSemVer
+Alias: dsv
+
+Parameters:
+--azOrgUrl          (Required) Azure DevOps organization URL
+--azAccessToken     (Required) System Access Token
+--projectName       (Required) Project name
+--pullRequestId     (Required) Pull request ID
+--semVer            (Required) Current Semantic Version
+
+Example:
+az-semver determineSemVer \
+--azOrgUrl=https://dev.azure.com/renanmorais \
+--azAccessToken=2xiqysqfoopyucvxmv3xkhzzusq5liso2oxgusvncq46uydvqxza \
+--projectName=DEVOPS-CLI \
+--pullRequestId=9 \
+--semVer=1.0.0
