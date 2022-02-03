@@ -2,7 +2,6 @@
   "name": "az-semver",
   "version": "1.0.0",
   "description": "az-semver CLI",
-  "private": true,
   "types": "build/types/types.d.ts",
   "bin": {
     "az-semver": "bin/az-semver"
